@@ -1,6 +1,5 @@
 FROM node:8-alpine
 
-RUN apk add mongodb
-RUN apk upgrade
+RUN apk add mongodb-tools
 
 CMD ["node", "main"]
